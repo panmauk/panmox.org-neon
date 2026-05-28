@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+<link rel="apple-touch-icon" href="assets/favicon.jpg">
+<meta name="description" content="NEURALXP // Offline A.I. for Windows XP. A.I. meets 2001.">
+<title>NEURALXP // NEON</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .neon-violet {
+    color: #f0d8ff;
+    text-shadow:
+      0 0 4px #fff, 0 0 8px #e0bdff,
+      0 0 14px #b765ff, 0 0 28px #b765ff,
+      0 0 50px #b765ff, 0 0 90px #b765ff;
+  }
+  @keyframes flickerViolet {
+    0%, 19%, 23%, 26%, 54%, 58%, 100% {
+      text-shadow:
+        0 0 4px #fff, 0 0 8px #e0bdff, 0 0 14px #b765ff,
+        0 0 28px #b765ff, 0 0 50px #b765ff, 0 0 90px #b765ff;
+    }
+    21%, 25%, 56% { text-shadow: none; color: rgba(240,216,255,.4); }
+  }
+  .flicker-violet { animation: flickerViolet 7.4s 1.8s infinite; }
+</style>
+</head>
+<body>
+
+<div class="sun"></div>
+<div class="skyline"></div>
+<div class="grid-floor"></div>
+<div class="rain"></div>
+<div class="fog"></div>
+<div class="steam s1"></div>
+<div class="steam s2"></div>
+<div class="steam s3"></div>
+<div class="spotlight"></div>
+<div class="vhs"></div>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<div class="kanji k1">脳</div>
+<div class="kanji k2">古</div>
+<div class="kanji k3">計</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">PANMOX</a>
+    <ul class="nav-links">
+      <li><button id="productsBtn">Products</button></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" id="navNlBtn">Newsletter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-dropdown-overlay" id="dropdownOverlay"></div>
+<div class="nav-dropdown" id="productsDropdown">
+  <div class="nav-dropdown-inner">
+    <h4>// EXPLORE SIGNAGE</h4>
+    <ul>
+      <li><a href="altnet.html"        class="dd-cyan">AltNet</a></li>
+      <li><a href="neuralxp.html"      class="dd-violet">NeuralXP</a></li>
+      <li><a href="lostengine.html"    class="dd-acid">LostEngine</a></li>
+      <li><a href="browser.html"       class="dd-magenta">PANMOX Browser</a></li>
+      <li><a href="overbyte.html"      class="dd-jade">OverByte</a></li>
+      <li><a href="linuxsimplify.html" class="dd-blood">LinuxSimplify</a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-kicker">// A.I. MEETS 2001</div>
+  <h1 class="page-hero-name neon-violet flicker-violet">NEURALXP</h1>
+  <p class="page-hero-tag">An offline language model for the machines time forgot. Built for Windows XP. Born from the future.</p>
+  <div class="btn-row">
+    <a href="https://github.com/panmauk/NeuralXP/releases/download/installer/NeuralXP-Setup-1.0.2.exe" class="btn btn-violet">DOWNLOAD</a>
+    <a href="https://github.com/panmauk/NeuralXP" target="_blank" rel="noopener" class="btn btn-cyan">VIEW SOURCE</a>
+  </div>
+</section>
+
+<div class="content">
+
+  <h2 class="neon-violet">// FOR THE FORGOTTEN</h2>
+  <p>NeuralXP runs a real, offline language model on machines the rest of the world abandoned twenty years ago. <em>No cloud. No subscription. No telemetry.</em> Just intelligence, where there used to be silence.</p>
+
+  <h2 class="neon-cyan flicker-cyan">// BY THE NUMBERS</h2>
+  <div class="feature-row">
+    <div class="feature" style="color: #b765ff; border-color: rgba(183,101,255,.5); box-shadow: 0 0 10px rgba(183,101,255,.25);">
+      <span class="feat-num">// MIN RAM</span>
+      <h3 class="neon-violet" style="font-family:var(--sign); font-size:36px; letter-spacing:3px;">512<span style="font-size:.6em">MB</span></h3>
+    </div>
+    <div class="feature" style="color: var(--cyan); border-color: rgba(0,240,255,.5);">
+      <span class="feat-num">// WINDOWS</span>
+      <h3 class="neon-cyan" style="font-family:var(--sign); font-size:36px; letter-spacing:3px;">XP+</h3>
+    </div>
+    <div class="feature" style="color: var(--acid); border-color: rgba(252,227,0,.5);">
+      <span class="feat-num">// OFFLINE</span>
+      <h3 class="neon-acid" style="font-family:var(--sign); font-size:36px; letter-spacing:3px;">100%</h3>
+    </div>
+    <div class="feature" style="color: var(--jade); border-color: rgba(0,255,136,.5);">
+      <span class="feat-num">// FOREVER</span>
+      <h3 class="neon-jade" style="font-family:var(--sign); font-size:36px; letter-spacing:3px;">$0</h3>
+    </div>
+  </div>
+
+  <h2 class="neon-acid">// OLD MACHINE. NEW MIND.</h2>
+  <div class="feature-row">
+    <div class="feature" style="color: var(--cyan); border-color: rgba(0,240,255,.4);">
+      <span class="feat-num">// 01</span>
+      <h3 class="neon-cyan">LIGHTNING FAST</h3>
+      <p>Optimized inference. No bloated frameworks. Boots faster than your Pentium III ever booted Windows.</p>
+    </div>
+    <div class="feature" style="color: var(--magenta); border-color: rgba(255,43,214,.4);">
+      <span class="feat-num">// 02</span>
+      <h3 class="neon-magenta">RUNS ON POTATOES</h3>
+      <p>512MB RAM. Single-core CPU. No GPU. If it can run XP, it can run NeuralXP.</p>
+    </div>
+    <div class="feature" style="color: var(--jade); border-color: rgba(0,255,136,.4);">
+      <span class="feat-num">// 03</span>
+      <h3 class="neon-jade">FULLY OFFLINE</h3>
+      <p>Zero network calls. Zero telemetry. Your prompts never leave the machine.</p>
+    </div>
+    <div class="feature" style="color: var(--acid); border-color: rgba(252,227,0,.4);">
+      <span class="feat-num">// 04</span>
+      <h3 class="neon-acid">BUILT TO LAST</h3>
+      <p>No forced updates. No deprecated APIs. The version you install today works in 2046.</p>
+    </div>
+    <div class="feature" style="color: #b765ff; border-color: rgba(183,101,255,.4);">
+      <span class="feat-num">// 05</span>
+      <h3 class="neon-violet">NATIVE WINDOWS</h3>
+      <p>Real .exe installer. Real Windows UI. No Electron. No 800MB Chromium overhead.</p>
+    </div>
+    <div class="feature" style="color: var(--blood); border-color: rgba(255,0,51,.4);">
+      <span class="feat-num">// 06</span>
+      <h3 class="neon-blood">OPEN SOURCE</h3>
+      <p>Every line on GitHub. GPL v3. Audit it, fork it, run it on a ThinkPad in an attic.</p>
+    </div>
+  </div>
+
+  <h2 class="neon-violet flicker-violet">// FREE. FOREVER.</h2>
+  <p>NeuralXP is open-source software under the GNU General Public License v3. No accounts, no servers, no compromises &mdash; just A.I. you can hold in your hands.</p>
+  <div class="btn-row" style="margin-top:36px;">
+    <a href="https://github.com/panmauk/NeuralXP/releases/download/installer/NeuralXP-Setup-1.0.2.exe" class="btn btn-violet">DOWNLOAD FOR WINDOWS</a>
+  </div>
+  <p style="margin-top:64px; font-family:var(--mono); font-size:11px; letter-spacing:3px; color:var(--paper-mute);">// LICENSED UNDER GNU GPL v3 //</p>
+
+</div>
+
+<div class="nl-overlay" id="nlOverlay">
+  <div class="nl-box">
+    <button class="nl-close">&times;</button>
+    <div id="nlContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="ftxt">&copy; 2026 PANMOX &middot; ALL RIGHTS RESERVED</div>
+  <div class="ftm">PANMOX&trade; / PANMOX Browser&trade; / AltNet&trade; / LostEngine&trade; / NeuralXP&trade; / OverByte&trade; / LinuxSimplify&trade; are trademarks of PANMOX.</div>
+</footer>
+
+<script src="neon.js"></script>
+</body>
+</html>

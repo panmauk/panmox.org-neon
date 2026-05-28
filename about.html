@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+<link rel="apple-touch-icon" href="assets/favicon.jpg">
+<meta name="description" content="ABOUT // PANMOX NEON — who runs the alley.">
+<title>ABOUT // PANMOX NEON</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin: 56px auto 0;
+    max-width: 880px;
+  }
+  .contact-card {
+    border: 1px solid var(--rule);
+    padding: 22px 24px;
+    background: rgba(4,3,10,.55);
+    transition: border-color .3s, box-shadow .3s, transform .3s;
+  }
+  .contact-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 0 12px rgba(0,240,255,.3);
+    transform: translateY(-3px);
+  }
+  .contact-card .lbl {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--paper-mute);
+    margin-bottom: 10px;
+  }
+  .contact-card a {
+    font-family: var(--vt);
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: var(--cyan-h);
+    text-decoration: none;
+    text-shadow: 0 0 4px var(--cyan);
+    transition: text-shadow .25s;
+    word-break: break-all;
+  }
+  .contact-card a:hover { text-shadow: 0 0 8px var(--cyan), 0 0 18px var(--cyan); }
+  .contact-card .note {
+    margin-top: 6px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--paper-mute);
+  }
+</style>
+</head>
+<body>
+
+<div class="sun"></div>
+<div class="skyline"></div>
+<div class="grid-floor"></div>
+<div class="rain"></div>
+<div class="fog"></div>
+<div class="steam s1"></div>
+<div class="steam s2"></div>
+<div class="steam s3"></div>
+<div class="spotlight"></div>
+<div class="vhs"></div>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<div class="kanji k1">店</div>
+<div class="kanji k2">繋</div>
+<div class="kanji k3">夢</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">PANMOX</a>
+    <ul class="nav-links">
+      <li><button id="productsBtn">Products</button></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" id="navNlBtn">Newsletter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="nav-dropdown-overlay" id="dropdownOverlay"></div>
+<div class="nav-dropdown" id="productsDropdown">
+  <div class="nav-dropdown-inner">
+    <h4>// EXPLORE SIGNAGE</h4>
+    <ul>
+      <li><a href="altnet.html"        class="dd-cyan">AltNet</a></li>
+      <li><a href="neuralxp.html"      class="dd-violet">NeuralXP</a></li>
+      <li><a href="lostengine.html"    class="dd-acid">LostEngine</a></li>
+      <li><a href="browser.html"       class="dd-magenta">PANMOX Browser</a></li>
+      <li><a href="overbyte.html"      class="dd-jade">OverByte</a></li>
+      <li><a href="linuxsimplify.html" class="dd-blood">LinuxSimplify</a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-kicker">// THE STUDIO</div>
+  <h1 class="page-hero-name neon-magenta flicker-magenta">ABOUT</h1>
+  <p class="page-hero-tag">Who runs the alley. Who answers the wire when it rings.</p>
+</section>
+
+<div class="content">
+
+  <h2 class="neon-cyan">// WHO WE ARE</h2>
+  <p>PANMOX is a small independent studio building free and open-source software. Whether it&rsquo;s a browser, an offline A.I., a search engine, a system tool, or something stranger &mdash; everything we ship is released under the <em>GNU GPL v3</em>. No telemetry. No accounts. No subscriptions.</p>
+  <p>We believe in transparency, user freedom, and putting control back in your hands. The software you install today should still work in twenty years &mdash; on the same hardware &mdash; without asking permission from a server somewhere.</p>
+  <p>Some of our projects are practical. Some are jokes. Some run on machines the rest of the world abandoned. <em>All of them are yours to keep.</em> We currently ship Windows builds, with GNU/Linux and macOS versions on the way.</p>
+
+  <h2 class="neon-acid flicker-acid">// SIGNAL</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="lbl">// BUSINESS</div>
+      <a href="mailto:business@panmox.org">business@panmox.org</a>
+    </div>
+    <div class="contact-card">
+      <div class="lbl">// CEO</div>
+      <a href="mailto:panmauk@panmox.org">panmauk@panmox.org</a>
+    </div>
+    <div class="contact-card">
+      <div class="lbl">// X / TWITTER</div>
+      <a href="https://x.com/actuallyPanmauk" target="_blank" rel="noopener">@actuallyPanmauk</a>
+      <div class="note">// DMs OPEN</div>
+    </div>
+    <div class="contact-card">
+      <div class="lbl">// GENERAL</div>
+      <a href="mailto:panmox-group@panmox.org">panmox-group@panmox.org</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="nl-overlay" id="nlOverlay">
+  <div class="nl-box">
+    <button class="nl-close">&times;</button>
+    <div id="nlContent"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="ftxt">&copy; 2026 PANMOX &middot; ALL RIGHTS RESERVED</div>
+  <div class="ftm">PANMOX&trade; / PANMOX Browser&trade; / AltNet&trade; / LostEngine&trade; / NeuralXP&trade; / OverByte&trade; / LinuxSimplify&trade; are trademarks of PANMOX.</div>
+</footer>
+
+<script src="neon.js"></script>
+</body>
+</html>
